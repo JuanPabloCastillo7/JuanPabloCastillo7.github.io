@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="../Css/">
+    <script src="../Js/utilidades.js"></script>
+</head>
+<body>
+
+    <div id="calendar-container">
+        <div id="calendar-header">
+            <button id="prev-year">«</button>
+            <button id="prev-month">‹</button>
+            <h2 id="current-date"></h2>
+            <button id="next-month">›</button>
+            <button id="next-year">»</button>
+        </div>
+        <div id="view-switcher">
+            <button id="view-annual">Anual</button>
+            <button id="view-monthly">Mensual</button>
+            <button id="view-daily">Diario</button>
+        </div>
+        <div id="calendar" class= "calendar"></div>
+    </div>
+    
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <form id="event-form">
+                <input type="hidden" id="event-id">
+                <label for="event-date">Fecha:</label>
+                <input type="date" id="event-date" required>
+                <label for="event-time">Hora:</label>
+                <select id="event-time" required>
+                
+                </select>
+                <label for="event-description">Descripción:</label>
+                <textarea id="event-description" required></textarea>
+                <label for="event-participants">Nombres de los participantes:</label>
+                <textarea id="event-participants" required></textarea>
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="utilidades.js"></script>
+
+
+
+
+    
+
+
+</body>
+</html>
